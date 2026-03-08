@@ -88,6 +88,7 @@ class PokerEntity:
         self.temp_logs = [] # Текущая последовательность в раунде
         self.memory = ReplayBuffer(capacity=2000)
         self.hidden = None
+        
 
     def reset_round(self):
         self.hidden = None
